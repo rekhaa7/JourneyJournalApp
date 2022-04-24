@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Journey Journal</string>
+    <string name="slogan">\"Preserve your special memories\"</string>
+    <string name="signin">Sign In with Journey Journal account</string>
+    <string name="signup">Don\'t have Journey Journal account? Sign Up</string>
+    <string name="or">Or Sign in with</string>
+</resources>

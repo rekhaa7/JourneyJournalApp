@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Journal">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:background="@drawable/ic_wave" />
+
+
+    <TextView
+        android:id="@+id/journalEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@id/bArrow"
+        android:fontFamily="@font/enriqueta_medium"
+        android:text="Journal Editor"
+        android:textColor="@color/white"
+        android:textSize="22dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/clickImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ic_baseline_image_white" />
+
+    <!--<androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/clickDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ic_action_delete" />-->
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/bArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/ic_baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/dateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bArrow"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/enriqueta_medium"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateTime"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/enriqueta_regular"
+        android:hint="Entry title..."
+        android:imeOptions="actionNext"
+        android:maxLines="2"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/paragraph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/enriqueta_regular"
+        android:gravity="top"
+        android:hint="Entry text..."
+        android:maxLines="20"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+
+    <ImageView
+        android:id="@+id/imageJournal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@id/paragraph"
+        android:layout_above="@id/saveJournal"
+        android:contentDescription="@string/app_name"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageRemove"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@id/imageJournal"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@id/imageJournal"
+        android:background="@drawable/delete_bg"
+        android:contentDescription="@string/app_name"
+        android:padding="4dp"
+        android:src="@drawable/ic_baseline_delete_forever_24"
+        android:visibility="gone"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveJournal"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_baseline_save_24"
+        app:maxImageSize="30dp" />
+
+
+
+</RelativeLayout>

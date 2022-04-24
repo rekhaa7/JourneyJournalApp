@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/dialog_bg">
+
+    <TextView
+        android:id="@+id/txtsignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/customer"
+        android:id="@+id/signup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signup"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/josefinsans_regular"
+            android:hint="Fullname"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:textSize="15dp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fullname"
+            android:hint="E-mail"
+            android:textSize="15dp"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext"
+            android:fontFamily="@font/josefinsans_regular"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawablePadding="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:imeOptions="actionNext"
+            android:drawableLeft="@drawable/ic_baseline_phone_24"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/josefinsans_regular"
+            android:hint="Phone number"
+            android:inputType="phone"
+            android:textSize="15dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/josefinsans_regular"
+        android:hint="Password"
+        android:imeOptions="actionNext"
+        android:inputType="textPassword"
+        android:textSize="15dp"
+
+        />
+
+    <ImageButton
+        android:id="@+id/hidePassword1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone"
+        android:layout_alignEnd="@id/password"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@drawable/ic_baseline_visibility_off_24" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/repassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/josefinsans_regular"
+        android:hint="Confirm Password"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:textSize="15dp" />
+
+    <ImageButton
+        android:id="@+id/hidePassword2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_alignEnd="@id/password"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@drawable/ic_baseline_visibility_off_24" />
+
+    <Button
+        android:id="@+id/btcancel"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/repassword"
+        android:layout_marginRight="25dp"
+        android:layout_toLeftOf="@id/btsignup"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="Cancel"
+        android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btsignup"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/repassword"
+            android:layout_alignParentRight="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="sign up"
+            android:textColor="@color/black" />
+
+
+
+</RelativeLayout>

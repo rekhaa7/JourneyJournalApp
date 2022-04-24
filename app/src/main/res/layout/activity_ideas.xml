@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ideas">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/wave"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:background="@drawable/ic_wave" />
+
+    <TextView
+        android:id="@+id/navIdeas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/enriqueta_medium"
+        android:text="Ideas"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/white"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/writingIdeas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/navIdeas"
+        android:fontFamily="@font/enriqueta_medium"
+        android:text="Some ideas to write about Journal."
+        android:layout_marginStart="15dp"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageIdea1"
+        android:src="@drawable/ic_baseline_emoji_objects_24"
+        android:layout_below="@id/writingIdeas"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/idea1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/imageIdea1"
+        android:fontFamily="@font/enriqueta_medium"
+        android:text="How you feel travelling"
+        android:layout_below="@id/writingIdeas"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageIdea2"
+        android:src="@drawable/ic_baseline_emoji_objects_24"
+        android:layout_below="@id/imageIdea1"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/idea2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageIdea1"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/imageIdea2"
+        android:fontFamily="@font/enriqueta_medium"
+        android:text="Something new you learned recently"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageIdea3"
+        android:src="@drawable/ic_baseline_emoji_objects_24"
+        android:layout_below="@id/imageIdea2"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/idea3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageIdea2"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/imageIdea3"
+        android:fontFamily="@font/enriqueta_medium"
+        android:text="Reflect what happened during visiting places"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageIdea4"
+        android:src="@drawable/ic_baseline_emoji_objects_24"
+        android:layout_below="@id/imageIdea3"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/idea4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/imageIdea1"
+        android:fontFamily="@font/enriqueta_medium"
+        android:text="Your cherished memories"
+        android:layout_below="@id/imageIdea3"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageIdea5"
+        android:src="@drawable/ic_baseline_emoji_objects_24"
+        android:layout_below="@id/imageIdea4"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/idea5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/imageIdea1"
+        android:fontFamily="@font/enriqueta_medium"
+        android:text="Struggle you faced during place visits"
+        android:layout_below="@id/imageIdea4"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageIdea6"
+        android:src="@drawable/ic_baseline_emoji_objects_24"
+        android:layout_below="@id/imageIdea5"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/idea6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/imageIdea1"
+        android:fontFamily="@font/enriqueta_medium"
+        android:text="What am I grateful for"
+        android:layout_below="@id/imageIdea5"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageIdea7"
+        android:src="@drawable/ic_baseline_emoji_objects_24"
+        android:layout_below="@id/imageIdea6"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/idea7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/imageIdea1"
+        android:fontFamily="@font/enriqueta_medium"
+        android:text="Reasons to be proud of yourself"
+        android:layout_below="@id/imageIdea6"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageIdea8"
+        android:src="@drawable/ic_baseline_emoji_objects_24"
+        android:layout_below="@id/imageIdea7"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/idea8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/imageIdea1"
+        android:fontFamily="@font/enriqueta_medium"
+        android:text="Your dream place"
+        android:layout_below="@id/imageIdea7"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageIdea9"
+        android:src="@drawable/ic_baseline_emoji_objects_24"
+        android:layout_below="@id/imageIdea8"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/idea9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/imageIdea1"
+        android:fontFamily="@font/enriqueta_medium"
+        android:text="Gratitude log"
+        android:layout_below="@id/imageIdea8"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageIdea10"
+        android:src="@drawable/ic_baseline_emoji_objects_24"
+        android:layout_below="@id/imageIdea9"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/idea10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/imageIdea1"
+        android:fontFamily="@font/enriqueta_medium"
+        android:text="Review your solo journey or journey with others"
+        android:layout_below="@id/imageIdea9"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/journalText"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idea10"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_action_message" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/ideasNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:itemIconSize="20dp"
+        app:itemRippleColor="#80DAD5"
+        app:itemTextColor="@color/purple_500"
+        app:menu="@menu/navigation_items">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+</RelativeLayout>

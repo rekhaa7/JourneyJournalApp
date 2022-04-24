@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".SignIn">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignin"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/round_btn"
+        android:backgroundTint="#80DAD5"
+        android:drawableStart="@drawable/ic_action_name"
+        android:fontFamily="@font/josefinsans_regular"
+        android:paddingStart="8dp"
+        android:text="Sign In with Journey Journal account"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSignin"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/josefinsans_regular"
+        android:text="New to Journey Journal account?"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSignin"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/account"
+        android:fontFamily="@font/josefinsans_regular"
+        android:text="Signup here"
+        android:textColor="#80DAD5"
+        android:textColorLink="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSignup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/josefinsans_regular"
+        android:text="Or"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <View
+        android:layout_width="190dp"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/btnSignup"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="14dp"
+        android:layout_toLeftOf="@id/or"
+        android:background="@color/black" />
+
+    <View
+        android:layout_width="190dp"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/btnSignup"
+        android:layout_marginTop="25dp"
+        android:background="@color/black"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_toRightOf="@id/or" />
+
+
+
+    <ImageView
+        android:id="@+id/imgtravel"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/travel"
+        android:transitionName="appimage" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/or"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/josefinsans_regular"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgtravel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/josefinsans_regular"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        android:textStyle="bold"
+         />
+
+
+
+</RelativeLayout>
